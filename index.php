@@ -9,21 +9,22 @@ require_once 'src/function.php';
 
     <link rel="stylesheet" href="/src/style.css">
     <script src="/src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 <div>
-    <button onclick="clickButton('<?php echo $valueButton1; ?>')" id="button1">button1</button>
+    <button onclick="clickButton('<?php echo $valueButton1; ?>', 1)" id="button1">button1</button>
     <input id="valueButton1" type="hidden" value="<?= $valueButton1 ?>">
 </div>
 <div>
-    <button onclick="clickButton('<?php echo $valueButton2; ?>')" id="button2">button2</button>
+    <button onclick="clickButton('<?php echo $valueButton2; ?>', 2)" id="button2">button2</button>
     <input id="valueButton2" type="hidden" value="<?= $valueButton2 ?>">
 </div>
 <div>
     Hello World
 </div>
 <div>
-    <button onclick="showButton1Value()" id="buttonvalue1">show button 1 value</button>
+    <button onclick="showButton1Value()" >show button value</button>
 </div>
 
 
