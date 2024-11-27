@@ -1,7 +1,3 @@
-function onClickButton1() {
-    alert(111)
-}
-
-function onClickButton2() {
-    alert(222)
+function clickButton() {
+    alert('function click')
 }
