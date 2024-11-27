@@ -1,4 +1,4 @@
 <?php
 
-$valueButton1 = 1;
-$valueButton2 = 1;
+$valueButton1 = 'do not push';
+$valueButton2 = 'push';
