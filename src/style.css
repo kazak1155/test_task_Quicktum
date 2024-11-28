@@ -2,6 +2,10 @@ div {
     padding: 5px;
 }
 
+button {
+    padding: 5px;
+}
+
 .button_push {
     background-color: lightgreen;
 }

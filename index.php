@@ -20,7 +20,10 @@ require_once 'src/function.php';
     Hello World
 </div>
 <div>
-    <button onclick="showButton1Value()" >show button value</button>
+    <form action="/" method="post">
+        <input name="inputText" id="string">
+        <button>send input text to check</button>
+    </form>
 </div>
 
 <script src="/src/script.js"></script>
