@@ -1,3 +1,19 @@
 div {
     padding: 5px;
 }
+
+.button_push {
+    background-color: lightgreen;
+}
+
+.button_do_not_push  {
+    color: black;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}

@@ -1,23 +1,45 @@
-// import axios from "axios";
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const div = document.getElementById('text_in_div');
 
-function clickButton(statusButton, numberButton) {
-    statusButton === 'push' ? "push" : "do not push";
-
-    const  inputField = document.getElementById('valueButton2');
-    inputField.value = '222'
-
-    axios.post('http://127.0.0.1:8000/', {
-        button: numberButton
-    })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+function updateDivClass() {
+    if (button1.className === 'button_push' && button2.className === 'button_push') {
+        div.classList.remove('inactive');
+        div.classList.add('active');
+    } else {
+        div.classList.remove('active');
+        div.classList.add('inactive');
+    }
 }
-function showButton1Value() {
-    let buttton1 = document.getElementById('valueButton1').value
-    let buttton2 = document.getElementById('valueButton2').value
-    alert('button1: ' + buttton1 + ' button2: ' + buttton2)
+
+function clickButton1() {
+
+    const button = document.getElementById('button1');
+
+    if (button.className === 'button_do_not_push') {
+        button.classList.remove('button_do_not_push');
+        button.classList.add('button_push');
+        updateDivClass();
+
+    } else if (button.className === 'button_push') {
+        button.classList.remove('button_push');
+        button.classList.add('button_do_not_push');
+        updateDivClass();
+    }
+}
+
+function clickButton2() {
+
+    const button = document.getElementById('button2');
+
+    if (button.className === 'button_do_not_push') {
+        button.classList.remove('button_do_not_push');
+        button.classList.add('button_push');
+        updateDivClass();
+
+    } else if (button.className === 'button_push') {
+        button.classList.remove('button_push');
+        button.classList.add('button_do_not_push');
+        updateDivClass();
+    }
 }

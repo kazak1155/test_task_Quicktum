@@ -8,24 +8,20 @@ require_once 'src/function.php';
     <title>тестовое задание Веб-студия Quicktum</title>
 
     <link rel="stylesheet" href="/src/style.css">
-    <script src="/src/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 <div>
-    <button onclick="clickButton('<?php echo $valueButton1; ?>', 1)" id="button1">button1</button>
-    <input id="valueButton1" type="hidden" value="<?= $valueButton1 ?>">
+    <button onclick="clickButton1()" class="button_do_not_push" id="button1">button1</button>
 </div>
 <div>
-    <button onclick="clickButton('<?php echo $valueButton2; ?>', 2)" id="button2">button2</button>
-    <input id="valueButton2" type="hidden" value="<?= $valueButton2 ?>">
+    <button onclick="clickButton2()" class="button_do_not_push" id="button2">button2</button>
 </div>
-<div>
+<div id="text_in_div" class="inactive">
     Hello World
 </div>
 <div>
     <button onclick="showButton1Value()" >show button value</button>
 </div>
 
-
+<script src="/src/script.js"></script>
 </body>
